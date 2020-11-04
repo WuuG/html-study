@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ch-zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_lable</title>
+</head>
+
+<body>
+    <form action="xxx1.php" method="GET">
+        <!-- text文本框 -->
+        用户名：<input type="text" name="username" maxlength="6" placeholder="请输入用户名"> <br>
+        <!-- password 密码 -->
+        密码: <input type="password" name="password"> <br>
+        <!-- radio 单选按钮 -->
+        性别 :<input type="radio" name="sex" value="女"> 女 <input type="radio" name="sex" value="男"> 男 <br>
+        <!-- chenckbox 多选按钮（复选框） -->
+        爱好：吃饭<input type="checkbox" name="hobby" value="eat"> 睡觉<input type="checkbox" name="hobby" value="sleep"
+            checked="checked">打豆豆
+        <!-- checked能够使得他默认选择这个复选框 -->
+        <input type="checkbox" name="hobby" value="hitDD"> <br>
+        <!-- 提交按钮，能够把表单域的内容传到服务器地去 -->
+        <input type="submit" value="免费注册">
+        <!--  reset 重置按钮 -->
+        <input type="reset" value="重新填写">
+        <!-- button 普通按钮属性，做某件事情, JS可以写功能-->
+        <input type="button" value="请输入验证码"> <br>
+        <!-- 文件域，上传文件使用的 -->
+        上传头像: <input type="file">
+    </form>
+</body>
+
+</html>
