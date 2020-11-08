@@ -1,0 +1,35 @@
+p {
+    text-indent: 2em;
+    line-height: 30px;
+}
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+img {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: seagreen;
+}
+.center {
+    text-align: center;
+}
+.gary {
+    /* color: gray; */
+    color: #888888;
+}
+.font_size10px {
+    font-size: 10px;
+}
+.text_indent2em {
+    text-indent: 2em;
+}
+.search {
+    width: 170px;
+    color: #666666;
+}
+.search-button {
+    font-weight: 700;
+}
