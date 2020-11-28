@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            /* td2em w200px h200 lh26px tdn  
+            基本上是语法首字母大小就可以快速生成了 */
+            text-indent: 2em;
+            width: 200px;
+            height: 200px;
+            line-height: 26px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div*3  快速生成多个标签-->
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- ul>li 父子级关系 -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- div+p 兄弟级关系 -->
+    <div></div>
+    <p></p>
+    <!-- .nav  类型直接出-->
+    <div class="nav"></div>
+    <!-- #sex  id直接出 -->
+    <div id="sex"></div>
+    <!-- p.nav span.gary 默认是div 在.前面可也以写具体的标签,直接写出class -->
+    <p class="nav"></p>
+    <span class="gray"></span>
+    <!-- p#women h2#man  同理，可以在#前写具体标签直接写出id  -->
+    <p id="women"></p>
+    <h2 id="man"></h2>
+    <ul>
+        <li id="id"></li>
+    </ul>
+    <!-- .demo$*5 实现自增（自增符号$） -->
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <div class="demo5"></div>
+    <!-- div{里面是内容} 标签内默认显示文字 -->
+    <div>里面是内容</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+
+</body>
+
+</html>

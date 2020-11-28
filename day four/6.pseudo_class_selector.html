@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 
+        未访问过的链接选择出
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        将访问过的连接选择出来
+        a:visited {
+            color: seagreen;
+        }
+
+        鼠标经过的连接选择出来
+        a:hover {
+            color: skyblue;
+        }
+
+        将鼠标点击时的链接选择出来
+        a:active {
+            color: red;
+        }  */
+        /* 开发中的写法 */
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" target="_blank">小猪佩奇</a>
+    <a href="http://baidu.com" target="_blank">百度的某个网站</a>
+    <a href="http://qq.com" target="_blank">百度的某个网站</a>
+</body>
+
+</html>

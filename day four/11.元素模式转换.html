@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素模式转换</title>
+    <style>
+        a {
+            display: block;
+            width: 200px;
+            height: 200px;
+            /* //转换为块级元素 */
+            background-color: seagreen;
+        }
+
+        div {
+            background-color: purple;
+            /* 转换为行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">360和QQ</a>
+    <div>一号块级元素就位</div>
+    <div>二号块级元素就位</div>
+    <span>行内元素转换</span>
+    <span>行内元素转换</span>
+</body>
+
+</html>

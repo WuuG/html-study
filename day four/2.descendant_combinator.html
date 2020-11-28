@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 拿出OL中的li 并改变样式 */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+            text-decoration: none;
+        }
+
+        .nav li a {
+            color: seagreen;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是OL的孩子</li>
+        <li>我是OL的孩子</li>
+        <li>我是OL的孩子</li>
+        <li><a href="#">百度输入法</a></li>
+    </ol>
+    <ol class="nav">
+        <li>我是OL的孩子</li>
+        <li>我是OL的孩子</li>
+        <li>我是OL的孩子</li>
+        <li><a href="#">百度输入法</a></li>
+        <li><a href="#">百度输入法</a></li>
+        <li><a href="#">百度输入法</a></li>
+        <li><a href="#">百度输入法</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+</body>
+
+</html>
