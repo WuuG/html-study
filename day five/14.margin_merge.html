@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距合并-嵌套块级元素垂直外边距塌陷</title>
+    <style>
+        .father {
+            background-color: seagreen;
+            width: 400px;
+            height: 600px;
+            margin-top: 20px;
+            /* 解决方法一，加边框使子块与父块隔开 transparent(透明) */
+            border-top: 1px solid transparent;
+            /* 解决方法二： 加内边距 */
+            padding-top: 1px;
+            /* 第三种方法：overflow: hidden,这种方法不会改动盒子大小。 */
+            overflow: hidden;
+        }
+
+        .father .son {
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

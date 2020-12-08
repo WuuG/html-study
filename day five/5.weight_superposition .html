@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权重叠加</title>
+    <style>
+        /* ul li 的权重为0,0,0,2(0,0,0,1 + 0,0,0,1)，因此权重比单独的li大 */
+        ul li {
+            color: seagreen;
+        }
+
+        li {
+            color: red;
+        }
+
+        /* 权重为0,0,1,1(0,0,0,1 + 0,0,1,1),所以会比ul li的权重高 */
+        .nav li {
+            color: blueviolet;
+        }
+
+        /* 因为.nav li叠加后比forli还大，所以这个不应用，*/
+        /* 值得注意的是，叠加可以，但是不会进位。 */
+        .forli {
+            color: blue;
+        }
+
+        #forli {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="forli">小丽1</li>
+        <li id="forli">小丽2</li>
+        <li>小丽3</li>
+    </ul>
+</body>
+
+</html>

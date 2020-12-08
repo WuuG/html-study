@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型之边框</title>
+    <style>
+        .div1 {
+            width: 300px;
+            height: 300px;
+            /* border-width: 4px; */
+            /*  solid 实线边框  dashed 虚线边框 dotted  点线标签*/
+            /* border-style: solid;
+            border-color: red; */
+            /* 边框的复合写法 */
+            border: 4px solid seagreen;
+            border-right: 10px dashed pink;
+            border-top: 10px dotted red;
+            border-bottom: 10px dotted blue;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid blue;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            /* 层叠性的就近原则，下面会将上面的样式覆盖 */
+            border: 10px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+</body>
+
+</html>

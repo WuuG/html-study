@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <style>
+        body {
+            /* 但是important对继承性好像不太管用,因为继承的权重是0 */
+            color: red !important;
+            /* color: red; */
+        }
+
+        div {
+            /* 此处!important可以使用 */
+            /* color: black !important; */
+            color: black;
+        }
+
+        .text {
+            /* 权重最高（加上imprtant后） */
+            color: seagreen;
+            /* color: seagreen !important; */
+        }
+
+        #ID {
+            color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <div>优先级测试</div>
+    <div class="text">优先级测试</div>
+    <div class="text" id="ID">优先级测试</div>
+    <div class="text" id="ID" style="color: pink;">优先级测试</div>
+    <!-- a链接有一个默认样式，所有不会因为继承而变样式 -->
+    <a href="#">a标签是单独的样式</a>
+</body>
+
+</html>
