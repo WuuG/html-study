@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动属性</title>
+    <style>
+        .lbox {
+            float: left;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        .rbox {
+            /* float: none; */
+            float: left;
+            background-color: seagreen;
+            height: 200px;
+            width: 200px;
+        }
+        .three {
+            float: left;
+
+            height: 200px;
+            width: 200px;
+            background-color: seashell;
+        }
+        .four {
+            float: left;
+
+            height: 400px;
+            width: 200px;
+            background-color: springgreen;
+        }
+        span {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            float: left;
+        }
+        span div {
+            height: 100px;
+            width: 100px;
+            background-color:tomato;
+            float: left;
+        }
+        p {
+            float: right;
+            height: 400px;
+            background-color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="lbox">青龙大人</div>
+    <div class="rbox">白虎大人</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <span>5</span>
+    <span>6 <div>7</div></span>
+    <p>8</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父元素高度不定的情况</title>
+    <style>
+        .box {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: gray;
+            /* 清除浮动 */
+            /* overflow: hidden; */
+        }
+
+        .box .sbox {
+            height: 200px;
+            width: 400px;
+            float: left;
+            background-color: seagreen;
+            margin-right: 10px;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: indianred;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .clearfix1::before,
+        .clearfix1::after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix1::after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix1">
+        <div class="sbox">浮动1</div>
+        <div class="sbox">浮动2</div>
+        <!-- <div class="clear"></div> -->
+        <!-- clear的元素必须是块级元素 -->
+        <!-- <span class="clear"></span> -->
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仅第二个盒子浮动会怎么样？</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: gray;
+        }
+
+        /* 并不会压住第一个div */
+        .float {
+            height: 100px;
+            width: 100px;
+            float: left;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="float"></div>
+    <div style="background-color: seagreen;"></div>
+</body>
+
+</html>
