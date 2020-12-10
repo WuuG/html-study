@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 100px auto;
+            /* 前两个参数是必须的.后面的参数可以省略
+            默认是外阴影,内阴影需要在最后加inset,另外外阴影是默认所以不需要加任何值
+            box-shadow: x y 阴影深度 阴影大小 颜色(可透明) 内外阴影; */
+        }
+        .box:hover {
+            /* 缺少过度,确实生硬 */
+            box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.3) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
