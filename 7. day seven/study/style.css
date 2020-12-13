@@ -13,6 +13,19 @@ a {
     color: #050505;
     text-decoration: none;
 }
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
 .w {
     width: 1200px;
     margin: 0 auto;
@@ -197,4 +210,64 @@ a {
     padding: 22px 26px 22px 0px;
     font-size: 14px;
     color: #00a4ff;
+}
+/* 精品推荐栏目的样式 */
+.goods {
+    margin-top: 37px;
+}
+
+.goods .top {
+    height: 21px;
+}
+.goods .top .ltop {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.goods .top .rtop a {
+    float: right;
+    margin: 10px 32px 0px 0px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.goods ul {
+    margin-top: 21px;
+    width: 1215px;
+}
+.goods ul li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+}
+.goods ul li:hover {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.goods ul li img {
+    width: 100%;
+}
+.goods ul li h4 {
+    float: left;
+    padding: 20px 20px 14px 20px;
+    font-size: 14px;
+    color: #050505;
+}
+.goods ul li span {
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #ff7c2d;
+}
+.goods .dot {
+    float: left;
+    padding: 0px 9px;
+    font-size: 12px;
+    color: #999999;
+}
+.goods ul li p {
+    float: left;
+    font-size: 12px;
+    color: #999999;
 }
