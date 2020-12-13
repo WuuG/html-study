@@ -211,6 +211,68 @@ a {
     font-size: 14px;
     color: #00a4ff;
 }
+/* box顶部样式，每个box可复用 */
+.boxTopLeft {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.boxTopRight {
+    float: right;
+    margin: 10px 32px 0px 0px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.boxTopMid {
+    float: left;
+    margin-left: 70px;
+    font-size: 16px;
+    color: 868686;
+}
+.boxTopMid:hover {
+    color: #00a4ff;
+}
+/* 具体内容盒子的样式 */
+.contentBox {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+}
+.contentBox:hover {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.contentBoxImg {
+    width: 100%;
+}
+.contentBoxHeadline {
+    display: block;
+    float: left;
+    padding: 20px 20px 14px 20px;
+    width: 188px;
+    height: 35.5px;
+    font-size: 14px;
+    color: #050505;
+}
+.contentBoxLevel {
+    float: left;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #ff7c2d;
+}
+.contentBoxDot {
+    float: left;
+    padding: 0px 9px;
+    font-size: 12px;
+    color: #999999;
+}
+.contentBoxStudyNumber {
+    float: left;
+    font-size: 12px;
+    color: #999999;
+}
 /* 精品推荐栏目的样式 */
 .goods {
     margin-top: 37px;
@@ -270,4 +332,50 @@ a {
     float: left;
     font-size: 12px;
     color: #999999;
+}
+/* 编程入门的样式 */
+.codeEntry {
+    margin-top: 20px;
+    /* height: 433px; */
+}
+.codeEntry .top {
+    height: 41px;
+}
+.codeEntry .top .mid {
+    float: right;
+    margin-top: 5px;
+    margin-right: 352px;
+}
+.codeEntry .top .mid a:hover {
+    color: #00a4ff;
+}
+.codeEntry .top .right {
+    float: right;
+}
+.codeEntry .top .codeEntry .content {
+    height: 392px;
+}
+.codeEntry .content {
+    width: 1225px;
+}
+.codeEntry .content .left {
+    float: left;
+    height: 100%;
+}
+.codeEntry .content .right {
+    float: left;
+    margin-left: 15px;
+}
+.codeEntry .content .right .top {
+    float: left;
+    height: 100%;
+    margin-bottom: 22px;
+}
+/* .codeEntry .content .right .bottom {
+    float: left;
+    width: 228px;
+    height: 270px;
+} */
+.codeEntry .content .right ul li {
+    float: left;
 }
