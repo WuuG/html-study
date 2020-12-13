@@ -212,6 +212,10 @@ a {
     color: #00a4ff;
 }
 /* box顶部样式，每个box可复用 */
+.boxTop {
+    height: 41px;
+    margin-top: 20px;
+}
 .boxTopLeft {
     float: left;
     font-size: 20px;
@@ -378,4 +382,67 @@ a {
 } */
 .codeEntry .content .right ul li {
     float: left;
+}
+/* 机器学习工程师样式 */
+
+.bottomContent .boxTop .mid {
+    float: right;
+    margin-top: 5px;
+    margin-right: 352px;
+}
+.bottomContent .top .mid a:hover {
+    color: #00a4ff;
+}
+.bottomContent .content ul {
+    width: 1225px;
+}
+.footer {
+    height: 417px;
+    background-color: #fff;
+}
+.footer .w {
+    margin-top: 33px;
+}
+.footer .w .bigw {
+    width: 1325px;
+}
+.footer .w .copyright {
+    margin-left: 22px;
+    float: left;
+    font-size: 12px;
+    color: #666666;
+}
+.footer .w .copyright .p {
+    font-family: "SimSun";
+}
+.footer .w .copyright .logo {
+    margin-bottom: 25px;
+}
+.footer .w .copyright .app {
+    display: block;
+    margin-top: 16px;
+    width: 118px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+}
+.footer .link {
+    width: 645px;
+    float: left;
+    margin-left: 224px;
+}
+.footer .link dl {
+    float: left;
+}
+.footer .link dl dd {
+    font-size: 16px;
+    font-size: 12px;
+    color: #333;
+}
+.footer .link dl dt {
+    margin-right: 145px;
+    color: #333;
+    margin-bottom: 16px;
 }
