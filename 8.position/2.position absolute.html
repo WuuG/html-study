@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .son {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+        }
+
+        .father {
+            /* position: relative; */
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .father .son {
+            left: 100px;
+            bottom: 100px;
+        }
+
+        .grandfather {
+            position: relative;
+            width: 1000px;
+            height: 1000px;
+            background-color: red;
+        }
+
+        .bro {
+            width: 100px;
+            height: 100px;
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grandfather">
+        <div class="father">
+            <div class="son"></div>
+            <div class="bro"></div>
+        </div>
+    </div>
+
+    <div class="son"></div>
+</body>
+
+</html>
