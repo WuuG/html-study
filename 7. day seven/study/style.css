@@ -301,6 +301,7 @@ a {
     width: 1215px;
 }
 .goods ul li {
+    position: relative;
     float: left;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -313,6 +314,13 @@ a {
 }
 .goods ul li img {
     width: 100%;
+}
+.goods ul li .lable {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+    width: 40px;
+    height: 24px;
 }
 .goods ul li h4 {
     float: left;
