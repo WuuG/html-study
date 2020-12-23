@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土豆网案例</title>
+    <style>
+        .box {
+            position: relative;
+            margin: 10px auto;
+            width: 444px;
+            height: 320px;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hat {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4) url(./images/arr.png) no-repeat center center;
+        }
+
+        /* 这样子是不会显示的,因为hat已经隐藏了,所以不会悬停在上空
+        .hat:hover {
+            display: block;
+            background-color: seagreen;
+        } */
+        .box:hover .hat {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="hat"></div>
+        <img src="images/tudou.jpg" alt="">
+    </div>
+</body>
+
+</html>

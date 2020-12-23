@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        .qiaozhi,
+        .peiqi {
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+
+        .qiaozhi {
+            /* 隐藏元素后继续占用原来的位置 */
+            visibility: hidden;
+            background-color: skyblue;
+        }
+
+        .peiqi {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qiaozhi">1</div>
+    <div class="peiqi"></div>
+</body>
+
+</html>

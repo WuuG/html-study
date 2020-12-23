@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            position: relative;
+            margin: 40px auto;
+            width: 520px;
+            height: 280px;
+
+        }
+
+        .tb-promo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tb-promo a {
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+        }
+
+        .pre,
+        .next {
+            position: absolute;
+            bottom: 50%;
+            margin-bottom: -15px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 20px;
+        }
+
+        .pre {
+            left: 0;
+            border-radius: 0px 15px 15px 0;
+        }
+
+        .next {
+            /* 既有left和right执行left，既有top和bottom执行top */
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            margin-left: -35px;
+            width: 70px;
+            height: 14px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 7px;
+        }
+
+        .promo-nav li {
+            float: left;
+            margin: 3px;
+            background-color: #fff;
+            width: 8PX;
+            height: 8PX;
+            border-radius: 4px;
+        }
+
+        .tb-promo .ad {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+            background-color: rgba(0, 0, 0, 0.3);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo"><img src="./images/tb.jpg" alt="">
+        <a href="#" class="pre"> &lt </a>
+        <a href="#" class="next"> &gt </a>
+        <ul class="promo-nav">
+            <li style="background-color: rgb(255, 80, 0);"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="ad">广告</div>
+    </div>
+</body>
+
+</html>
