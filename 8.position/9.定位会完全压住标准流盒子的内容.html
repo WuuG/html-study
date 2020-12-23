@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位会完全压住标准流盒子的内容</title>
+    <style>
+        .box {
+            /* 定位会完全压住标准流盒子的内容 */
+            position: absolute;
+            /* 浮动会压住盒子，当不会压住盒子里的内容,浮动刚开始做的目的就是为了实现文字环绕。
+            float: left; */
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <p>里面是内容，用来测试会不会被上面的盒子压住</p>
+</body>
+
+</html>
