@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 三角制作</title>
+    <style>
+        .littlebox {
+            position: relative;
+            margin: 100px auto;
+            height: 20px;
+            width: 20px;
+            background-color: red;
+        }
+
+        .littlebox:hover .box {
+            display: block;
+        }
+
+        .box {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: -10px;
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+        }
+
+        .triangel {
+            position: absolute;
+            top: -18px;
+            left: 10px;
+            width: 0px;
+            height: 0px;
+            border: 10px solid transparent;
+            border-bottom-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="littlebox">
+        <div class="box">
+            <div class="triangel"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
