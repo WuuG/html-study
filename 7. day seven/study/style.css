@@ -96,6 +96,9 @@ a {
     font-size: 14px;
     color: #666666;
 }
+.head .user img {
+    vertical-align: middle;
+}
 .banner {
     height: 420px;
     background-color: #1c036c;
