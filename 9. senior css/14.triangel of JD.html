@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东的梯形</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            margin-right: 5px;
+            margin: 100px auto;
+            width: 160px;
+            height: 24px;
+            border: solid 1px red;
+
+        }
+
+        .price {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 24px;
+            background-color: #ff0000;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .triangel {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border-color: transparent white white transparent;
+            border-style: solid;
+            border-width: 12px 5px 12px 5px;
+        }
+
+        .oldPrice {
+            margin-left: 5px;
+            float: left;
+            text-decoration: line-through;
+            color: #808080;
+            font-size: 12px;
+            line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <sapn class="price">
+            ￥1650
+            <div class="triangel">
+            </div>
+        </sapn>
+        <span class="oldPrice">￥5000</span>
+
+
+
+    </div>
+</body>
+
+</html>

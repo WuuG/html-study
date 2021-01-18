@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本超出显示省略号</title>
+    <style>
+        .box {
+            margin: 100px auto;
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            /* 1.不允许换行，强制一行内显示 */
+            white-space: nowrap;
+            /* 2.溢出的部分隐藏起来 */
+            overflow: hidden;
+            /* 3.溢出的部分用省略号显示 */
+            text-overflow: ellipsis;
+        }
+
+        .box2 {
+            margin: 10px auto;
+            height: 100px;
+            width: 100px;
+            background-color: seagreen;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+    </div>
+    <div class="box2">
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+        这里是很长的一句话，说起来这句话真的很长，确实很长。
+    </div>
+</body>
+
+</html>
