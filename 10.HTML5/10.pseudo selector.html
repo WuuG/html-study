@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        .test {
+            width: 400px;
+            height: 400px;
+            background-color: seagreen;
+        }
+
+        .test::before {
+            display: inline-block;
+            content: '<<';
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        .test::after {
+            content: '>>';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">
+        这里是主要内容
+    </div>
+</body>
+
+</html>

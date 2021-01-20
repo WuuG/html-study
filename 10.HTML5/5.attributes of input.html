@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input的新属性</title>
+    <style>
+        input::placeholder {
+            color: seagreen;
+        }
+
+        input {
+            outline: seagreen;
+            border: solid 2px seagreen;
+        }
+
+        .button {
+            outline: none;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input name="search" type="text" placeholder="这里写了一行字" required="required" autofocus="autofocus"
+            autocomplete="on">
+        <input type="file" name="files" id="" multiple="multiple">
+        <input class="button" type="submit" value="点击这里提交">
+
+    </form>
+</body>
+
+</html>

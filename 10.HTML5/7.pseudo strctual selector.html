@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        ul li {
+            display: inline-block;
+        }
+
+        ul li:first-child,
+        li:last-child {
+            background-color: seagreen;
+        }
+
+        ul li:nth-child(2),
+        li:nth-child(4) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+        <li>我是第9个孩子</li>
+    </ul>
+</body>
+
+</html>

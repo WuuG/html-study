@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        input[value] {
+            color: seagreen;
+        }
+
+        input[type="password"] {
+            color: red;
+        }
+
+        div[class^="pic"] {
+            color: skyblue;
+            background-color: red;
+            display: inline;
+        }
+
+        div[class$="data"] {
+            color: pink;
+        }
+
+        div[class*="light"] {
+            background-color: #edf110;
+            display: inline;
+        }
+
+        /* 上下权重一样,下覆盖上 */
+        div.light {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 属性选择器，根据属性选择元素 -->
+    <input type="text" value="用属性选择器选择这个" placeholder="这里会覆盖吗？">
+    <input type="text">
+    <!-- 属性选择器可以根据属性的值进行选择 -->
+    <input type="text">
+    <input type="password">
+    <!-- 根据属性值开头共同的值来选择元素 -->
+    <div class="pic1">1</div>
+    <div class="pic2">2</div>
+    <div class="pic3">3</div>
+    <div class="pic4">4</div>
+    <!-- 根据属性值结尾共同值来选择元素 -->
+    <div class="icon1-data">数据1</div>
+    <div class="icon2-data">数据2</div>
+    <div class="icon3-date">日期3</div>
+
+    <div class="light">灯光</div>
+    <div class="lighting">闪耀吧 灯光</div>
+    <div class="re-lighted">再次闪耀吧,灯光</div>
+</body>
+
+</html>

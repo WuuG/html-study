@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :nth-child() 将所有孩子进行排序,执行时先看序号，在考虑类型 */
+        header div:nth-child(2) {
+            background-color: red;
+        }
+
+        header div:nth-of-type(2) {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>这里是标题</h4>
+        <p>这里是一段话</p>
+        <div class="icon1">icon1</div>
+        <div class="icon2">icon2</div>
+        <div class="icon3">icon3</div>
+    </header>
+</body>
+
+</html>

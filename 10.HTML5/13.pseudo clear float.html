@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器清除浮动</title>
+    <style>
+        /* .box {
+            overflow: hidden;
+            background-color: skyblue;
+        } */
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .lbox {
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: seagreen;
+            margin-right: 10px;
+        }
+
+        .rbox {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+
+        /* .clear {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="rbox"></div>
+</body>
+
+</html>

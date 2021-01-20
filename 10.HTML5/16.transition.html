@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            /* 谁做过度给谁加 */
+            transition: all 0.5s ease 0s;
+        }
+
+        .box:hover {
+            width: 500px;
+            height: 350px;
+            vertical-align: baseline;
+            background: url(images/pink.jpg) no-repeat;
+            /* transition: all 0.5s ease 0s; */
+        }
+
+        .box1,
+        .box2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 谁做过度给谁加 */
+            transition: all 0s ease 0s;
+        }
+
+        .box1:hover {
+            background: url(images/pink.jpg) no-repeat;
+        }
+
+        .box2:hover {
+            background: url(images/pink.jpg) no-repeat;
+            background-position: -200px 0px;
+        }
+
+        .bigBox {
+            overflow: hidden;
+        }
+
+        .button {
+            float: left;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            margin-top: 160px;
+        }
+
+        .button:hover .box1 {
+            background: url(images/pink.jpg) no-repeat;
+        }
+
+        .button:hover .box2 {
+            background: url(images/pink.jpg) no-repeat -200px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigBox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="button">显示按钮</div>
+        这个应该需要用JS来解决
+    </div>
+
+    </br>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>
