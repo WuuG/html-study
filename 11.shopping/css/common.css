@@ -137,6 +137,8 @@
     color: #ffffff;
 }
 .nav .w .dropdown ul {
+    display: none;
+    /* 这里记得改回来 */
     width: 209px;
     background-color: #c81623;
 }
@@ -175,4 +177,90 @@
 }
 .nav .w .nav_item ul li:last-child a {
     padding-right: 0;
+}
+/* nav :end */
+/* footer :start */
+.footer {
+    height: 417px;
+    background-color: #f5f5f5;
+}
+.footer .mod_service {
+    padding-top: 30px;
+    height: 110px;
+    border-bottom: solid 1px #ededed;
+}
+.footer .mod_service ul li {
+    float: left;
+    margin: 0px 37px;
+    width: 170px;
+}
+.footer .mod_service ul li .icon {
+    float: left;
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+}
+.footer .mod_service ul li h5 {
+    padding-top: 5px;
+    font-size: 14px;
+}
+.footer .mod_service ul li p {
+    font-size: 12px;
+}
+.footer .mod_service ul li:nth-child(2) .icon {
+    background-position: -255px -54px;
+}
+.footer .mod_service ul li:nth-child(3) .icon {
+    background-position: -256px -106px;
+}
+.footer .mod_service ul li:nth-child(4) .icon {
+    background-position: -257px -157px;
+}
+.footer .mod_service ul li:nth-child(5) {
+    margin-right: 0;
+}
+.footer .mod_service ul li:nth-child(5) .icon {
+    background-position: -256px -209px;
+}
+.footer .mod_help {
+    padding-top: 20px;
+    padding-left: 50px;
+    height: 188px;
+    border-bottom: solid 1px #ededed;
+}
+.footer .mod_help dl {
+    margin-right: 130px;
+    color: #666666;
+}
+.footer .mod_help dl:nth-of-type(5) {
+    margin-right: 118px;
+    color: #666666;
+}
+.footer .mod_help dl:last-of-type {
+    margin-right: 0px;
+    text-align: center;
+}
+.footer .mod_help dl dt {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #333333;
+}
+.footer .mod_help .center {
+    width: 95px;
+    height: 150px;
+}
+.footer .mod_copyright {
+    height: 119px;
+}
+.footer .mod_copyright .links {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer .mod_copyright p {
+    margin-top: 15px;
+    text-align: center;
+}
+.footer .mod_copyright p:last-child {
+    margin-top: 10px;
 }
