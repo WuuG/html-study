@@ -107,7 +107,6 @@
     width: 235px;
     height: 24px;
     line-height: 24px;
-    color: #666666;
 }
 .main .newsflash .service {
     overflow: hidden;
@@ -120,6 +119,7 @@
     width: 280px;
 }
 .main .newsflash .service ul li {
+    position: relative;
     float: left;
     padding-top: 13px;
     text-align: center;
@@ -129,7 +129,15 @@
     border-style: solid;
     border-color: #e4e4e4;
 }
-
+.main .newsflash .service ul li:nth-of-type(2) a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../images/jian.png) top right no-repeat;
+}
 .main .newsflash .service ul li a .icon {
     display: inline-block;
     width: 25px;
@@ -149,3 +157,92 @@
     margin-top: 5px;
 }
 /* main 结束 */
+/* recommend 开始 */
+.recommend {
+    margin-top: 11px;
+    height: 163px;
+}
+.recommend .rec_hd {
+    padding-top: 31px;
+    width: 206px;
+    height: 163px;
+    text-align: center;
+    background-color: #5c5251;
+}
+.recommend .rec_hd h1 {
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.recommend .rec_bd ul li {
+    overflow: hidden;
+    float: left;
+    background-color: #ebebeb;
+}
+.recommend .rec_bd ul li a {
+    display: block;
+    width: 248px;
+    height: 163px;
+}
+.recommend .rec_bd ul li a .text {
+    overflow: hidden;
+    float: left;
+    margin: 22px 0 0 19px;
+    width: 87px;
+    font-weight: 400;
+}
+.recommend .rec_bd ul li a .text h3,
+h4,
+p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.recommend .rec_bd ul li a .text h3 {
+    font-size: 16px;
+    color: #333333;
+}
+
+.recommend .rec_bd ul li a .text h4 {
+    display: inline-flex;
+    padding: 0 2px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #00a0e8;
+}
+.recommend .rec_bd ul li:nth-child(2) a .text h4,
+.buy {
+    background-color: #5fb200;
+}
+.recommend .rec_bd ul li:nth-child(3) a .text h4,
+.buy {
+    background-color: #e2162f;
+}
+.recommend .rec_bd ul li:nth-child(4) a .text h4,
+.buy {
+    background-color: #0085fb;
+}
+.recommend .rec_bd ul li a .text p {
+    color: #666666;
+}
+.recommend .rec_bd ul li a .text .buy {
+    margin-top: 21px;
+    width: 57px;
+    height: 18px;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.recommend .rec_bd ul li a .img {
+    overflow: hidden;
+    margin: 24px 10px 0 0;
+    float: right;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+/* recommend 结束 */
