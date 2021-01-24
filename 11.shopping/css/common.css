@@ -137,8 +137,6 @@
     color: #ffffff;
 }
 .nav .w .dropdown ul {
-    display: none;
-    /* 这里记得改回来 */
     width: 209px;
     background-color: #c81623;
 }

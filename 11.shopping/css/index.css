@@ -1,0 +1,151 @@
+/* main 开始 */
+.main {
+    position: relative;
+    margin-left: 219px;
+    margin-top: 10px;
+    width: 981px;
+    height: 455px;
+}
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+}
+.focus::before {
+    font-family: "icomoon";
+    content: "\ea44";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -13px;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+}
+.focus::before:hover {
+    color: #ffffff60;
+}
+/* 这里其实还是用button做比较好,用伪元素是做不了的,因为功能无法实现 */
+.focus::after {
+    font-family: "icomoon";
+    content: "\ea42";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -13px;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+}
+.focus::after:hover {
+    color: #ffffff60;
+}
+.focus .bar {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -65px;
+    overflow: hidden;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(1, 1, 1, 0.3);
+}
+.focus .bar .content {
+    padding-left: 5px;
+    line-height: 15px;
+    font-size: 100px;
+}
+.focus .bar .content li {
+    float: left;
+}
+.main .newsflash {
+    float: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+    height: 455px;
+}
+.main .newsflash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.main .newsflash .news .news_hd {
+    padding: 0 15px;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e8e8e7;
+}
+.main .newsflash .news .news_hd h4 {
+    float: left;
+    font-size: 14px;
+    color: #333333;
+}
+.main .newsflash .news .news_hd a {
+    float: right;
+}
+.main .newsflash .news .news_hd a::after {
+    font-family: "icomoon";
+    content: "\e920";
+}
+.main .newsflash .news .news_bd ul {
+    padding-top: 7px;
+    width: 250px;
+}
+.main .newsflash .news .news_bd ul li {
+    float: left;
+}
+.main .newsflash .news .news_bd ul li a {
+    display: block;
+    padding: 0 15px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 235px;
+    height: 24px;
+    line-height: 24px;
+    color: #666666;
+}
+.main .newsflash .service {
+    overflow: hidden;
+    width: 250px;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+}
+.main .newsflash .service ul {
+    width: 280px;
+}
+.main .newsflash .service ul li {
+    float: left;
+    padding-top: 13px;
+    text-align: center;
+    width: 63px;
+    height: 70px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+}
+
+.main .newsflash .service ul li a .icon {
+    display: inline-block;
+    width: 25px;
+    height: 26px;
+    background: url(../images/icons.png) no-repeat -16px -16px;
+}
+.main .newsflash .service ul li:nth-of-type(2n) a .icon {
+    background-position: -78px -16px;
+}
+.main .newsflash .service ul li:nth-of-type(3n) a .icon {
+    background-position: -140px -16px;
+}
+.main .newsflash .service ul li:nth-of-type(4n) a .icon {
+    background-position: -205px -16px;
+}
+.main .newsflash .bargain {
+    margin-top: 5px;
+}
+/* main 结束 */
