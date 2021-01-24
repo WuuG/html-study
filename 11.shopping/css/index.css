@@ -256,5 +256,64 @@ p {
 }
 /* recommend 结束 */
 /* like 开始 */
-
+.like {
+    overflow: hidden;
+    margin-top: 30px;
+    height: 262px;
+}
+.like .like_hd {
+    height: 29px;
+}
+.like .like_hd h4 {
+    margin-top: -5px;
+    float: left;
+    font-size: 18px;
+    color: #333333;
+}
+.like .like_hd button {
+    float: right;
+    background-color: #ffffff;
+}
+.like .like_hd button::after {
+    font-family: "icomoon";
+    content: "\ea2e";
+    margin: 0 21px 0 9px;
+}
+.like .like_hd button:hover {
+    color: #c81623;
+}
+.like .like_bd {
+    height: 233px;
+    border: 1px solid #ededed;
+}
+.like .like_bd ul {
+    width: 1250px;
+}
+.like .like_bd ul li {
+    float: left;
+    width: 202px;
+    height: 231px;
+}
+.like .like_bd ul li .img {
+    width: 202px;
+    height: 161px;
+    line-height: 161px;
+    text-align: center;
+}
+.like .like_bd ul li .text {
+    border-right: 1px solid #ececec;
+    padding-left: 35px;
+}
+.like .like_bd ul li .text span {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #df3033;
+}
+.like .like_bd ul li .text h4 {
+    margin-left: -5px;
+    margin-top: 5px;
+    display: inline;
+    font-size: 18px;
+    color: #df3033;
+}
 /* like 结束 */
