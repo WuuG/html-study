@@ -159,6 +159,7 @@
 /* main 结束 */
 /* recommend 开始 */
 .recommend {
+    width: 1250px;
     margin-top: 11px;
     height: 163px;
 }
@@ -175,10 +176,19 @@
     font-weight: 400;
     color: #ffffff;
 }
+.recommend .rec_bd ul {
+    background-color: #ebebeb;
+}
 .recommend .rec_bd ul li {
     overflow: hidden;
     float: left;
-    background-color: #ebebeb;
+}
+.recommend .rec_bd ul .border {
+    float: left;
+    margin-top: 10px;
+    width: 1px;
+    height: 143px;
+    background-color: #dddddd;
 }
 .recommend .rec_bd ul li a {
     display: block;
@@ -244,5 +254,7 @@ p {
     height: 120px;
     text-align: center;
 }
-
 /* recommend 结束 */
+/* like 开始 */
+
+/* like 结束 */
