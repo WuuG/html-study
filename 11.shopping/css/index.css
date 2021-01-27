@@ -317,3 +317,125 @@ p {
     color: #df3033;
 }
 /* like 结束 */
+/* interesting 开始 */
+.w .interesting .int_hd {
+    margin-top: 36px;
+    height: 19px;
+    line-height: 19px;
+    font-size: 18px;
+}
+.w .interesting .int_bd {
+    margin-top: 8px;
+    height: 407px;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #ededed;
+}
+.w .interesting .int_bd .good_book {
+    float: left;
+    width: 404px;
+    height: 404px;
+    text-align: center;
+    line-height: 404px;
+    background-color: #b8bddd;
+}
+.w .interesting .int_bd .good_thing {
+    float: left;
+    width: 227px;
+    height: 404px;
+    border-right: 1px solid #ededed;
+}
+.w .interesting .int_bd .good_thing h4 {
+    margin-left: 18px;
+    width: 191px;
+    height: 40px;
+    border-bottom: 1px dashed #ededed;
+    text-align: center;
+    line-height: 39px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.w .interesting .int_bd .good_thing .good_thing_bd {
+    height: 207px;
+    border-bottom: 1px solid #ededed;
+    line-height: 207px;
+    text-align: center;
+}
+.w .interesting .int_bd .good_thing .good_thing_bd img {
+    width: 100%;
+}
+.w .interesting .int_bd .good_thing .height_159 {
+    height: 159px;
+    line-height: unset;
+}
+.w .interesting .int_bd .brand_street {
+    float: left;
+    width: 406px;
+    height: 404px;
+    border-right: 1px solid #ededed;
+    background-color: #f7f7f7;
+}
+.w .interesting .int_bd .brand_street h3 {
+    width: 367px;
+    height: 40px;
+    border-bottom: 1px dashed #ededed;
+    text-align: center;
+    line-height: 39px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.w .interesting .int_bd .brand_street .suber {
+    display: block;
+    width: 406px;
+    height: 207px;
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+    line-height: 207px;
+}
+.w .interesting .int_bd .brand_street ul li:first-child a {
+    display: block;
+    width: 203px;
+    height: 159px;
+    border-right: 1px solid #ededed;
+}
+.w .interesting .int_bd .brand_street ul li:last-child a {
+    display: block;
+    width: 202px;
+    height: 159px;
+}
+.w .interesting .int_bd .brand {
+    float: left;
+    width: 162px;
+    height: 404px;
+}
+.w .interesting .int_bd .brand ul {
+    margin: 13px 0px 0px 5px;
+    height: 381px;
+}
+.w .interesting .int_bd .brand ul li {
+    float: left;
+    height: 58px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.w .interesting .int_bd .brand ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.w .interesting .int_bd .brand ul li:nth-child(odd) {
+    width: 79px;
+    border-right: 1px dashed #e0e0e0;
+}
+.w .interesting .int_bd .brand ul li:nth-child(even) {
+    width: 78px;
+}
+.w .interesting .int_bd .brand ul li:nth-child(-n + 2) {
+    height: 45px;
+}
+.w .interesting .int_bd .brand ul li:nth-child(n + 13) {
+    height: 45px;
+    border-bottom: none;
+}
+/* interesting 结束 */
