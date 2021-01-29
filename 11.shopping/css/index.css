@@ -6,6 +6,7 @@
     width: 981px;
     height: 455px;
 }
+
 .focus {
     position: relative;
     float: left;
@@ -155,6 +156,34 @@
 }
 .main .newsflash .bargain {
     margin-top: 5px;
+}
+.main .side_bar {
+    position: absolute;
+    left: -296px;
+    top: 157px;
+    width: 66px;
+    height: 342px;
+}
+.main .side_bar ul li {
+    margin-left: 5px;
+    width: 56px;
+    height: 31px;
+    border-bottom: 1px solid #ededed;
+}
+.main .side_bar ul li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: -5px;
+    display: block;
+    width: 66px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+.main .side_bar ul li a:hover {
+    color: #ffffff;
+    background-color: #c81623;
 }
 /* main 结束 */
 /* recommend 开始 */
