@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热点图案例</title>
+    <style>
+        .map {
+            position: relative;
+            margin: 100px auto;
+            width: 698px;
+            height: 576px;
+            background: url(media/map.png) no-repeat center;
+        }
+
+        .city {
+            position: absolute;
+            color: #333;
+        }
+
+        .city:first-child {
+            left: 519px;
+            top: 216px;
+        }
+
+        .city:nth-child(2) {
+            left: 612px;
+            top: 463px;
+        }
+
+        .city:nth-child(3) {
+            left: 512px;
+            top: 490px;
+        }
+
+        .dot {
+            position: relative;
+
+            width: 8px;
+            height: 8px;
+            background-color: skyblue;
+            border-radius: 4px;
+        }
+
+        @keyframes magnify {
+            0% {}
+
+            70% {
+                /* scale会存在一个问题，就是变换的中心点，会变动的，并不是直接变大，应该能够解决的，就是怎么结局的问题了 */
+                /* transform: scale(1.2); */
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+
+            100% {
+                /* transform: scale(1.5); */
+                width: 50px;
+                height: 50px;
+                opacity: 0;
+            }
+        }
+
+        .city div[class^="round"] {
+            position: absolute;
+            /* 居中 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px skyblue;
+            border-radius: 50%;
+            transform-origin: left left;
+            animation: magnify 1.5s linear infinite;
+        }
+
+
+
+        .map div.round2 {
+            animation-delay: 0.5s;
+        }
+
+        .map div.round3 {
+            animation-delay: 1.0s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city">
+            <div class="dot">
+                <div class="round1"></div>
+                <div class="round2"></div>
+                <div class="round3"></div>
+            </div>
+            北京
+        </div>
+        <div class="city">
+            <div class="dot">
+                <div class="round1"></div>
+                <div class="round2"></div>
+                <div class="round3"></div>
+            </div>
+            台北
+        </div>
+        <div class="city">
+            <div class="dot">
+                <div class="round1"></div>
+                <div class="round2"></div>
+                <div class="round3"></div>
+            </div>
+            广州
+        </div>
+
+    </div>
+</body>
+
+</html>

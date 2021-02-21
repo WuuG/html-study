@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        /* 画面打开，盒子出现（左至右） */
+        /* 1.定义动画 */
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            /* 2.动画名称 */
+            animation-name: move;
+            /* 3.动画持续时间 */
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

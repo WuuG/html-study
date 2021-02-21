@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            100% {
+                transform: translate(1000px, 400px);
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            animation: move 4s ease 0s 3 alternate forwards;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+        }
+
+        .box::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            transform: rotate(135deg);
+            width: 10px;
+            height: 10px;
+            border: 1px solid #000;
+            border-left: none;
+            border-bottom: none;
+            transition: all 0.5s;
+        }
+
+        .box:hover::after {
+            transform: rotate(-45deg);
+            top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

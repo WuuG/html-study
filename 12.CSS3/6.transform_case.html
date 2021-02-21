@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转特效</title>
+    <style>
+        .b_box {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            background-color: skyblue;
+            line-height: 200px;
+        }
+
+        .b_box::before {
+            content: "儿子盒子";
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: inherit;
+            transform-origin: left bottom;
+            background-color: red;
+            transition: all 5s;
+            transform: rotate(2000deg);
+        }
+
+        .b_box:hover::before {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b_box">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform的复合写法</title>
+    <style>
+        .box {
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            transition: all 0.5s;
+            transform-origin: center;
+        }
+
+        .box:hover {
+            /* 根据执行顺序 出来的效果是不同的 需要注意 */
+            transform: translate(0, 100px) scale(2) rotate(360deg);
+            /* transform: rotate(360deg) translate(0, 100px) scale(2); */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

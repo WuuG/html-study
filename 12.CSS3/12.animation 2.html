@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画序列</title>
+    <style>
+        @keyframes move {
+
+            /* 这里也可以删掉,或者里面为空也行 */
+            0% {
+                transform: translateX(0px);
+            }
+
+            25% {
+                transform: translateX(1000px);
+            }
+
+            50% {
+                transform: translate(1000px, 300px);
+            }
+
+            75% {
+                transform: translate(0px, 300px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            animation-name: move;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

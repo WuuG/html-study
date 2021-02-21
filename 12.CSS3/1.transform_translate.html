@@ -12,8 +12,19 @@
             height: 200px;
             background-color: seagreen;
             /* transform: translate(100px, 100px); */
-            transform: translateX(100px);
-            transform: translateY(100px);
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+        }
+
+        /* 并没有脱标，仍然占据原先的位置，有点像relative的感觉 */
+        .box:nth-child(2) {
+            transform: translate(-20px, -20px);
+            background-color: red;
+            z-index: 1;
+        }
+
+        .box:last-of-type {
+            transform: translate(50%, 50%);
         }
     </style>
 </head>
@@ -22,6 +33,8 @@
     <div class="box">
 
     </div>
+    <div class="box"></div>
+    <div class="box"></div>
 </body>
 
 </html>
