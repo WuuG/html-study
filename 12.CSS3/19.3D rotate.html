@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+
+        img {
+            display: block;
+            margin: 100px auto;
+            transition: ease 3s;
+        }
+
+        img:hover {
+            /* transform: rotateX(720deg); */
+            /* transform: rotateY(720deg); */
+            /* transform: rotateZ(720deg); */
+            transform: rotate3d(1, 1, 0, 45deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="media/map.png" alt="">
+</body>
+
+</html>

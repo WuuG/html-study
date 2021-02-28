@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D导航栏</title>
+    <style>
+        .nav {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin: 100px 40px;
+            transform-style: preserve-3d;
+            perspective: 500px;
+
+        }
+
+        .box {
+            float: left;
+            position: relative;
+            width: 200px;
+            height: 100px;
+            transition: all 1s;
+            transform-style: preserve-3d;
+            transform: rotateY(45deg);
+            /* 通过移动后，虽然有一丝丝效果，但是因为透视的原因，会使在底下的盒子大小变大。 因此需要移动前面的盒子，来使X轴成为立方体的中心点。 有点抽象，下次你也不一定会。 */
+            /* transform: translateY(50px); */
+        }
+
+        .box:hover {
+            transform: rotateY(45deg) rotateX(90deg);
+        }
+
+        .top,
+        .down {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .top {
+            background-color: seagreen;
+            transform: translateZ(50px);
+        }
+
+        .down {
+            background-color: skyblue;
+            /* 先移动，后旋转 */
+            transform: translateY(50%) rotateX(-90deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="box">
+            <div class="top">
+                上面的文字
+            </div>
+            <div class="down">
+                下面的内容
+            </div>
+        </div>
+    </nav>
+    <nav class="nav">
+        <div class="box">
+            <div class="top">
+                上面的文字
+            </div>
+            <div class="down">
+                下面的内容
+            </div>
+        </div>
+    </nav>
+    <nav class="nav">
+        <div class="box">
+            <div class="top">
+                上面的文字
+            </div>
+            <div class="down">
+                下面的内容
+            </div>
+        </div>
+    </nav>
+    <nav class="nav">
+        <div class="box">
+            <div class="top">
+                上面的文字
+            </div>
+            <div class="down">
+                下面的内容
+            </div>
+        </div>
+    </nav>
+    <nav class="nav">
+        <div class="box">
+            <div class="top">
+                上面的文字
+            </div>
+            <div class="down">
+                下面的内容
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

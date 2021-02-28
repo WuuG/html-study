@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转木马案例</title>
+    <style>
+        body {
+            perspective: 700px;
+            transform-style: preserve-3d;
+            background-color: #333;
+        }
+
+        .carousel {
+            margin: 300px auto;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 5s linear infinite;
+
+        }
+
+        .carousel:hover {
+            animation-play-state: paused;
+        }
+
+        .carousel:hover .box:nth-of-type(7) {
+            animation-play-state: paused;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes stay {
+            100% {
+                transform: rotateY(-360deg);
+
+            }
+        }
+
+        .box:nth-of-type(7) {
+            animation: stay 5s linear infinite;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(media/phone.webp) no-repeat;
+        }
+
+        .box:nth-of-type(1) {
+            transform: rotateY(60deg) translateZ(300px);
+        }
+
+        .box:nth-of-type(2) {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+
+        .box:nth-of-type(3) {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+
+        .box:nth-of-type(4) {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+
+        .box:nth-of-type(5) {
+            transform: rotateY(300deg) translateZ(300px);
+        }
+
+        .box:nth-of-type(6) {
+            transform: rotateY(360deg) translateZ(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+        <div class="box">
+        </div>
+    </div>
+</body>
+
+</html>
