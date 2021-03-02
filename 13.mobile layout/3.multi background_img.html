@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid seagreen;
+            background: url(images/dog.jpg) no-repeat;
+            /* 1.只有一个参数的话 就表示宽度（等比例缩放） */
+            /* 2.还可以用百分比表示,是父盒子的百分比 */
+            /* 3.cover能够把盒子完全盖住,部分背景图会超出. */
+            /* 4.contain 扩大图像最大尺寸(等比例拉神),能够保证图片的全部内容,可能有部分空白区域. */
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
