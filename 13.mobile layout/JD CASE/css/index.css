@@ -19,6 +19,10 @@ body {
 ul {
     list-style: none;
 }
+a {
+    color: #666666;
+    text-decoration: none;
+}
 /* app模块 */
 .app {
     /* width: 100%; */
@@ -153,14 +157,14 @@ ul {
 
 .main .focus {
     position: relative;
-    padding-top: 8px;
+    margin-top: 8px;
     height: 140px;
     text-align: center;
 }
 .main .focus .back_ground {
     z-index: -1;
     position: absolute;
-    top: 0px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
@@ -182,8 +186,39 @@ ul {
     background-color: #c82519;
     z-index: -1;
 }
+.main .focus .f_img {
+    overflow: hidden;
+    position: relative;
+    height: 140px;
+    text-align: center;
+}
 .main .focus img {
-    width: 90%;
+    width: 94%;
     border-radius: 10px;
 }
-.main .focus;
+.main .brand {
+    height: 100px;
+}
+.main .brand ul li {
+    float: left;
+    width: 33%;
+    height: 100px;
+}
+.main .brand ul li a img {
+    width: 100%;
+}
+.main .nav a {
+    float: left;
+    width: 20%;
+    height: 74px;
+    text-align: center;
+    font-size: 12px;
+}
+.main .nav a img {
+    width: 2rem;
+    margin-top: 0.5rem;
+}
+.main .nav a span {
+    display: block;
+    margin-top: 6px;
+}
