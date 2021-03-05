@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 300px;
+            background-color: seagreen;
+            flex-direction: column;
+            justify-content: center;
+            /* 对侧轴结尾排列 */
+            /* align-items: flex-end; */
+            /* 拉伸 */
+            /* align-items: stretch; */
+            align-content: flex-end;
+        }
+
+        span {
+            width: 150px;
+            height: 50px;
+            margin-right: 5px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+
+    </div>
+</body>
+
+</html>

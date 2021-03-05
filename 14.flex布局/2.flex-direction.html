@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 300px;
+            background-color: seagreen;
+            /* 默认的主轴是x轴，也就是row */
+            flex-direction: row;
+            /* 翻转 */
+            flex-direction: row-reverse;
+            /* 主轴设为y轴，则x变为侧轴 */
+            flex-direction: column;
+        }
+
+        span {
+            width: 150px;
+            height: 100px;
+            margin-right: 5px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+
+    </div>
+</body>
+
+</html>
