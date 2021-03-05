@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    /* 这里会导致,无法滚动页面 */
+    /* overflow: hidden; */
+    height: 2000px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 540px;
+    min-width: 320px;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+/* search模块 */
+.search-index {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 540px;
+    min-width: 320px;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    background: -webkit-linear-gradient(top, #748a9b, transparent);
+}
+.search-index .search {
+    flex: 1;
+    margin: 8px 0px 0px 8px;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #999999;
+    color: #666666;
+    border-radius: 13px;
+    background-color: #fff;
+}
+.search-index .search::before {
+    display: inline-block;
+    content: "";
+    width: 35px;
+    height: 26px;
+    background: url(../images/sprite.png) no-repeat -47px -274px;
+    background-size: 104px auto;
+    vertical-align: middle;
+}
+.search-index .user {
+    display: block;
+    width: 51px;
+    height: 44px;
+    text-align: center;
+}
+.search-index .user {
+    color: #fff;
+    font-size: 12px;
+}
+.search-index .user span {
+    display: block;
+    margin: 3px 14px -1px;
+    width: 22px;
+    height: 22px;
+    background: url(../images/home-common-sprite2x@v7.15.png) no-repeat 0 -36px;
+    background-size: 21px auto;
+}
+/* background模块 */
+.background {
+    overflow: hidden;
+    z-index: -10;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 180px;
+}
+.background img {
+    display: block;
+    width: 100%;
+}
+/* local-nav模块 */
+.local-nav {
+    display: flex;
+    margin: -52px 12px 10px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.local-nav li {
+    flex: 1;
+    text-align: center;
+}
+.local-nav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.local-nav li span:nth-child(1) {
+    display: block;
+    margin: 6px 19px 4px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+.local-nav li:nth-child(2) span:nth-child(1) {
+    background-position: 0 -32px;
+}
+.local-nav li:nth-child(3) span:nth-child(1) {
+    background-position: 0 -64px;
+}
+.local-nav li:nth-child(4) span:nth-child(1) {
+    background-position: 0 -96px;
+}
+.local-nav li:nth-child(5) span:nth-child(1) {
+    background-position: 0 -128px;
+}
+/* .nav模块 */
+.nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 12px;
+    height: 270px;
+    background-color: skyblue;
+    border-radius: 10px;
+    text-align: center;
+}
+.nav .nav-item {
+    display: flex;
+    flex: 1;
+}
+.nav .nav-item:nth-child(1) {
+    background: -webkit-linear-gradient(left, #fa5b55, #fa984d);
+}
+.nav .nav-item:nth-child(2) {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: -webkit-linear-gradient(left, #4c91ed, #53bbee);
+}
+.nav .nav-item:nth-child(3) {
+    background: -webkit-linear-gradient(left, #35c3a9, #6cd55a);
+}
+.nav .nav-item .nav-s-items {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.nav .nav-item .nav-s-items:nth-child(1) {
+    background: url(../images/hotel.png) no-repeat 0px 43px;
+    background-size: 100% auto;
+}
+.nav .nav-item .nav-s-items:nth-child(2) {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.nav .nav-item .nav-s-items a {
+    line-height: 44px;
+    flex: 1;
+    color: #fff;
+}
+.nav .nav-item .nav-s-items:nth-child(2) a:nth-child(1),
+.nav .nav-item .nav-s-items:nth-child(3) a:nth-child(1) {
+    border-bottom: 1px solid #fff;
+}
