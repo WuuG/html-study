@@ -1,0 +1,24 @@
+header {
+  width: 200px;
+  height: 200px;
+  background-color: seagreen;
+}
+header a {
+  color: red;
+  text-decoration: none;
+}
+header a:hover {
+  color: #fff;
+}
+.nav .logo {
+  width: 400px;
+  height: 400px;
+  background-color: skyblue;
+}
+.nav::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+}

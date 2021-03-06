@@ -1,0 +1,28 @@
+header {
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    // less的嵌套 直接写在父元素中就好
+    a{
+        color:red;
+        text-decoration: none;
+        // 伪类、交集、伪元素选择器要加符号
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+.nav {
+    .logo {
+        width: 400px;
+        height: 400px;
+        background-color: skyblue;
+    }
+    &::before {
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: pink;
+    }
+}
