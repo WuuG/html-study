@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("./icomoon.woff");
+}
+body {
+  font-family: Verdana, icomoon, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+h1,
+h2 {
+  color: #cc6600;
+  border-bottom: thin dotted #888;
+}
+h1 {
+  /* 是父元素的两倍 */
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+blockquote {
+  /* 很多时候二者毫无区别 */
+  font-style: oblique;
+  font-style: italic;
+}
