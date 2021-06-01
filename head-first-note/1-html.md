@@ -8,3 +8,11 @@
    <br>
    ```
 + order list -> ol, unorder list -> ul, list item -> li
++ jpeg,png,git
++ DOCTYPE --> 为浏览器指定这个页面的文档类型
+# HTML HTML5
++ HTML5 --> 活的标准，向后兼容。
++ \<meta> --> 告诉浏览器关于页面的一些信息
+   ``` html
+   <meta charset="utf-8">
+   ```
