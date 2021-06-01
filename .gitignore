@@ -1,1 +1,3 @@
 node_modules/
+# 忽略Head First HTML AND CSS的源代码
+Head-First-HTML-source-code/
