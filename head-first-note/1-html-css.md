@@ -18,7 +18,7 @@
    ```
 # CSS
 + 继承：一般来说，文本样式能继承，其他样式继承。
-+ 若是选择器的优先级相同，则在CSS文件中靠后的样式获胜。
++ 若是选择器的优先级相同，则在CSS文件中靠后的样式获胜。**所以样式表引入的顺序很重要**
 + text-decoration，可以添加多个哦。可以添加条线 �
 ## font
 + font-family: 通常是包含一个字体列表，它们都来自一个字体系列，最后总是放一个通用的字体系列。
@@ -63,10 +63,25 @@ blockquote {
   font-style: oblique; 
 }
 ```
-### Color
+## Color
 + color属性会控制文本和边框颜色 --> 前景色？
-#### 表示的三种方法
+### 颜色表示的三种方法
 1. 关键字
 2. rgb() --> 参数可以是百分比，也可以是0-255的数字
 3. 十六进制 #cc6600  红绿蓝各两位，也是0-255的数字,两位相同可缩写。
- 
+## 盒模型 
+### background-repeat
+``` css
+{
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: inherit;
+}
+```
+### border
++ 八种样式
+## Id 和 类
++ Id唯一标识，类重用
++ Id选择器，只与页面中的一个元素匹配
+## 媒体查询

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "icomoon";
-  src: url("./icomoon.woff");
+  src: url(./icomoon.woff);
 }
 body {
   font-family: Verdana, icomoon, Geneva, Tahoma, sans-serif;
