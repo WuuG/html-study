@@ -10,8 +10,6 @@
 + order list -> ol, unorder list -> ul, list item -> li
 + jpeg,png,git
 + DOCTYPE --> 为浏览器指定这个页面的文档类型
-# HTML HTML5
-+ HTML5 --> 活的标准，向后兼容。
 + \<meta> --> 告诉浏览器关于页面的一些信息
    ``` html
    <meta charset="utf-8">
@@ -148,4 +146,41 @@ blockquote {
 #mina {
   display:table-cell;
 }
+```
+# HTML HTML5
++ HTML5 --> 活的标准，向后兼容。
++ time --> datetime属性
++ article
++ section
++ header
++ footer
+## video
+``` html
+<video controls autoplay width="512" height="288" src="video/tweetsip.mp4" poster="...png" loop></video>
+controls 控制组件
+autoplay 自动播放
+poster  未播放时显示的图像
+preload 细粒度控制视频加载  none metadata auto
+loop 循环
+```
+还可以设置多种格式，也可以设置具体的编码解码器
+``` html
+<video controls autoplay width="512" height="288" loop>
+	<source src="./video/tweetsip.mp4" type="video/mp4; codecs='avc1.42E01E, mo4a.40.2'">
+	<source src="./video/tweetsip.ogv">
+	<source src="./video/tweetsip.webm">
+	<object >...</object>  若不认识video就会使用这个标签
+	<p>Sorry,your browser doesn't support the video element</p>
+</video>
+```
+## 其他标签
+``` html
+<!-- 类似mark笔的效果 -->
+<mark>Here at Starbuzz we're </mark> 
+<!-- 进度条 -->
+<progress></progress>
+<!-- 显示JavaScript绘制的图像和动画 -->
+<canvas></canvas>
+<!-- 显示某个范围的度量 -->
+<meter></meter>
 ```
