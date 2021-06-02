@@ -1,9 +1,19 @@
 body {
-  font-size: small;
+  font: 14px/1.6em verdana, Helvetica, Arial, sans-serif;
+  /* font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.6em;
+  line-height: 1.6em; */
 }
-
+a:link {
+  color: #007e7e;
+}
+a:visited {
+  color: #333;
+}
+.elixirs_a:hover {
+  background: #f88396;
+  color: #0d5353;
+}
 h1,
 h2 {
   color: #007e7e;
@@ -29,4 +39,32 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   color: #444;
+}
+#elixirs {
+  float: right;
+  padding: 0 20px 20px 20px;
+  margin-left: 20px;
+  border: thin solid #007e7e;
+  width: 200px;
+  line-height: 1;
+  text-align: center;
+  background: url(./images/cocktail.gif) repeat-x;
+}
+#elixirs h2 {
+  color: black;
+}
+#elixirs h3 {
+  color: #d12c47;
+}
+.cd {
+  font-style: italic;
+}
+.music {
+  font-weight: bold;
+}
+#copy {
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
 }
