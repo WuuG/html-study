@@ -10,12 +10,51 @@ body {
   margin: 10px 10px 0 10px;
   height: 108px;
 }
+#headelogo {
+  float: left;
+}
+#headerSlogon {
+  float: right;
+}
+@media screen and (max-width: 800px) {
+  #award {
+    display: none;
+  }
+}
+#award {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#coupon {
+  position: fixed;
+  top: 520px;
+  left: -220px;
+  transition: all 0.3s ease;
+}
+#coupon:hover {
+  position: fixed;
+  top: 520px;
+  left: -90px;
+}
+#coupon a,
+img {
+  border: none;
+}
 #tableContainer {
   display: table;
   border-spacing: 10px;
 }
 #tableRow {
   display: table-row;
+}
+#drinks {
+  display: table-cell;
+  padding: 15px;
+  vertical-align: top;
+  width: 20%;
+  background: #efe5d0 url(images/background.gif) top left;
 }
 #main {
   display: table-cell;
