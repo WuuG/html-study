@@ -85,3 +85,45 @@ blockquote {
 + Id唯一标识，类重用
 + Id选择器，只与页面中的一个元素匹配
 ## 媒体查询
+用在html上
+``` html
+  <link rel="stylesheet" href="./lounge-mobile.css" media="screen and (max-width:480px)">
+  <link rel="stylesheet" href="./lounge-print.css" media="print">
+```
+用在css上
+``` css
+@media screen and (min-device-width: 481px) {
+ #guarantee {
+   margin-right:250px
+ }
+}
+```
+## line-height
+``` css
+{
+  /* 标识根据自身字体大小调整行高 */
+  line-height:1 
+}
+```
+## 缩写
+### font
+``` css
+{
+  /* font: font-style font-variant font-weight font-size/line-height font-family */
+  font: 14px/1.6em verdana, Helvetica, Arial, sans-serif;
+}
+```
+## 流式布局
++ 并排放置内联元素时，如所期望那样，两个元素外边距均有效
++ 当上下放置两个块级元素时，则会将二者共同的外边距折叠在一起，所以外边距为较大的外边距的高度
++ 嵌套时也可能存在外边距折叠的问题 --> 外边距塌陷
+### 浮动
++ 块级元素则会无视浮动元素。
++ 内联定位时，会在浮动元素边缘围绕。
++ 浮动的优点，就是会让文字环绕身边，实现适应性拉伸和收缩。
++ clear属性：让某个元素的左边右边或者两边不允许有浮动内容。
+   ``` css
+   {
+    clear: right;
+   }
+   ```
