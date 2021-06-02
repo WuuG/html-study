@@ -122,8 +122,30 @@ blockquote {
 + 内联定位时，会在浮动元素边缘围绕。
 + 浮动的优点，就是会让文字环绕身边，实现适应性拉伸和收缩。
 + clear属性：让某个元素的左边右边或者两边不允许有浮动内容。
++ 缺点：顺序无法放映内容的相对重要性，且列的高度不同。
    ``` css
    {
     clear: right;
    }
    ```
+## CSS表格显示 
+新的布局方式，表格显示。
+``` html
+  <div id="tableContainer">
+    <div id="tableRow">
+      <div id="main"></div>
+    </div>
+  </div>
+```
+``` css
+#tableContainer {
+  display: table;
+  border-spacing: 10px;
+}
+#tableRow {
+  display: table-row;
+}
+#mina {
+  display:table-cell;
+}
+```
