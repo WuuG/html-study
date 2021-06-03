@@ -184,3 +184,38 @@ loop 循环
 <!-- 显示某个范围的度量 -->
 <meter></meter>
 ```
+## Table
++ table
++ tr --> table row
++ th --> table head
++ td --> table data
++ caption --> 表格标题
++ border-spacing --> 边框间距,相当于表格单元格的外边距,这个tables定义在table上
++ border-collapse --> 折叠边框
+### rwospan
+单元格合并
+``` html
+<tr>
+  <td rowspan="2">Truth of City, ID</td>
+  <td >June 25th</td>
+  <td >74</td>
+  <td rowspan="2">5,312 ft</td>
+  <td rowspan="2">50</td>
+  <td >3/5</td>
+</tr>
+<tr>
+  <td >June 25th</td>
+  <td >74</td>
+  <td >3/5</td>
+</tr>
+```
+### colspan
+跨多列
+## list-style-image
+``` css
+li {
+  list-style-image: url(./images/backpack.gif);
+  padding-top: 5px;
+  margin-left: 20px;
+}
+```
