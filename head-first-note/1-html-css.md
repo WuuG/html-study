@@ -192,6 +192,8 @@ loop 循环
 + caption --> 表格标题
 + border-spacing --> 边框间距,相当于表格单元格的外边距,这个tables定义在table上
 + border-collapse --> 折叠边框
+
+> table会根据内容的大小进行调整宽度，所以若是外部无法调整很大概率时内部内容将内容撑大了
 ### rwospan
 单元格合并
 ``` html
@@ -219,3 +221,11 @@ li {
   margin-left: 20px;
 }
 ```
+# Form
+# 其他
+## 选择器
++ 属性选择器
++ 兄弟选择器
+## 开发商特定CSS属性
+如-mooz-transform类型的属性。
+## audio

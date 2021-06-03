@@ -1,0 +1,31 @@
+body {
+  width: 550px;
+  margin: 20px auto;
+}
+form {
+  padding: 10px 0;
+  border: 1px dotted #7e7e7e;
+  background-color: #e1ceb8;
+  width: 550px;
+}
+
+div#tableRow p {
+  display: table-cell;
+  vertical-align: top;
+  padding: 3px;
+}
+div#tableRow p:nth-child(1) {
+  text-align: right;
+}
+div#tableRow p:nth-child(2) {
+  text-align: left;
+}
+div#tableRow p.header {
+  font-weight: bold;
+}
+
+form textarea {
+  resize: none;
+  width: 380px;
+  height: 200px;
+}
