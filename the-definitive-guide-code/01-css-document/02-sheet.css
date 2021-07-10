@@ -1,0 +1,34 @@
+body {
+	background-color: #eee;
+}
+
+@supports(color:grey) {
+	body {
+		color: gray;
+	}
+}
+@supports(display: grid){
+	section#main {
+		display: grid;
+	}
+	/* 去掉久布局的样式 */
+	/* 添加新布局的样式 */
+}
+
+@supports(display: flex){
+ @media screen {
+	 /* 针对屏幕设备的弹性盒样式 */
+ }
+ @media print {
+	 /* 针对打印设备的弹性盒样式 */
+ }
+}
+
+@supports(display: grid )and (shape-outside: circle()){
+	/* 栅格和形状样式 */
+}
+@supports (color: black) and ((display: flex) or (display: grid)) {
+	body {
+		background-color: skyblue;
+	}
+}

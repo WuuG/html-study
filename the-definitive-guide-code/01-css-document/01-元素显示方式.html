@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>元素显示方式</title>
+	<style>
+		@import url(./02-sheet.css) all;
+
+		.em {
+			display: block;
+		}
+
+		/* 下面@import被忽略 */
+		@import url(./03-sheet2.css) screen;
+
+		.p {
+			display: inline;
+		}
+
+		@media projection {
+			body {
+				background-color: yellow;
+			}
+		}
+
+		@media print and (color) {
+			body {
+				background-color: skyblue;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="./03-sheet2.css" media="print,projection">
+</head>
+
+<body>
+	<p>
+		<em>this is the right way to use block and inline</em>
+	</p>
+	<em class="em">
+		<p class="p">
+			this is the wrong way to use block and inline
+		</p>
+	</em>
+
+</body>
+
+</html>

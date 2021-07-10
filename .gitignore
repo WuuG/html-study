@@ -1,3 +1,5 @@
 node_modules/
 # 忽略Head First HTML AND CSS的源代码
 Head-First-HTML-source-code/
+# 忽略CSS：The Definitive Guide的源代码
+csstdg4figs/
