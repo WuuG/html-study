@@ -1,0 +1,120 @@
+/* 类选择器 */
+/* p.urgent.warning {
+	color: skyblue;
+}
+#test {
+	background-color: skyblue;
+} */
+
+/* 属性选择器 */
+/* h1[class] {
+	color: silver;
+}
+
+a[href][title] {
+	text-decoration: none;
+} */
+
+/* 精确匹配 */
+/* a[href="http://www.baidu.com"] {
+	color: red;
+} */
+
+/* 开头和破折号匹配 */
+/* h1[lang|=en] {
+	color: red;
+} */
+
+/* 一组词中的一个匹配 */
+/* span[class~="text"] {
+	color: salmon;
+} */
+
+/* 子串匹配 */
+/* a[href*="zhihu"] {
+	color: sienna;
+}
+
+button[class|="btn"][class*="active"] {
+ background-color: blueviolet;
+}
+
+a[href^="http"] {
+	color:burlywood
+}
+a[href^="mailto"] {
+	color:cyan
+}
+
+h2[title="png" i] {
+	color:darkslategray
+} */
+
+
+/* 紧邻同胞 */
+/* div ol+ul li {
+	color: skyblue;
+} */
+
+/* 后续同胞 */
+/* div h1~p {
+	color:tomato;
+} */
+
+
+/* a:link:hover {
+	color: red;
+} */
+
+
+
+/* 伪类 */
+/* 根伪类 */
+/* :root {
+	border:3px solid gray
+} */
+
+/* 空伪类 */
+/* :empty {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+} */
+
+
+/* 唯一的子代 */
+/* a img:only-child {
+	width: 200px;
+} */
+
+
+/* 父元素唯一的类型 */
+/* div img:only-of-type {
+	width: 20px;
+} */
+/* div p[class]:only-of-type {
+	color: red;
+} */
+
+
+/* 选择每第n个元素 */
+/* span:nth-child(2n + -1) {
+	color: red;
+} */
+
+
+/* 判断列表长度 */
+/* li:only-child {background-color: green;} 
+li:nth-child(1):nth-last-child(2) ,li:nth-child(2):nth-last-child(1){background-color:rosybrown;}
+li:nth-child(1):nth-last-child(3),li:nth-child(1):nth-last-child(3)~li {background-color: sienna;}
+li:nth-child(1):nth-last-child(4),li:nth-child(1):nth-last-child(4)~li {background-color: tomato;} */
+
+
+
+/* UI状态伪类 */
+input:enabled {
+	background-color: silver;
+}
+input:disabled {
+	background-color: red;
+}

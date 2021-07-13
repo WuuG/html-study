@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>选择符</title>
+	<link rel="stylesheet" href="./02-sheet-selecet.css">
+</head>
+
+<body>
+	<!-- 类与ID选择器 -->
+	<!-- <p id="test" class="urgent warning ">测试类名连缀</p>
+	<p id="test" class="urgent  ">测试类名连缀</p> -->
+
+
+	<!-- 属性选择器 -->
+	<!-- <h1 class="sliver">Hello</h1>
+	<h1>World</h1>
+	<h1 class="haha">HTML</h1> -->
+
+	<!-- 第一个被选择上，第二个没有 -->
+	<!-- <a href="javascript:;" title="">属性选择器</a>
+	<a href="javascript:;">属性选择器</a> -->
+
+	<!-- 第一个匹配，第二个没有匹配 -->
+	<!-- <a href="http://www.baidu.com">百度</a>
+	<a href="https://www.baidu.com">百度</a> -->
+
+
+	<!-- 部分属性值的选择器 -->
+	<!-- 只有前两个会匹配 -->
+	<!-- <h1 lang="en">Hello</h1>
+	<h1 lang="en-us">Hello</h1>
+	<h1 lang="enus">Hello</h1>
+	<h1 lang="cy-en">Hello</h1>
+
+
+	<span class="word text">选择一组词的一个</span>
+
+
+	<a href="http://www.zhihu.com">知乎</a>
+	<a href="https://www.zhihu.com">知乎</a>
+
+	<button class="btn-small-arrow-active">属性选择器结合使用</button>
+
+	<a href="http://www.bilibili.com">bilibili</a>
+	<a href="mailto://www.bilibili.com">bilibili</a>
+
+	<h2 title="PNG">不区分大小写</h2> -->
+
+
+	<!-- 结构选择 -->
+	<!-- 选择紧邻同胞 -->
+	<!-- <div>
+		<ol>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ol>
+		中间的文本，对于+选择无影响
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div> -->
+
+	<!-- 选择后续同胞 -->
+	<!-- <div>
+		<h1>一级标题</h1>
+		<h2>二级标题</h2>
+		<p>段落</p>
+	</div> -->
+
+
+
+	<!-- 伪类 -->
+	<!-- <p></p>
+	<p> </p>
+	<p>
+	</p>
+	<p> -->
+	<!--注释-->
+	<!-- </p>
+	<img src="" alt="">
+	<input type="text"> -->
+
+	<!-- 选择唯一的子代 -->
+	<!-- <a href="https://www.baidu.com"><img src="./baidu-icno.png" alt=""></a>
+	<a href="https://www.baidu.com"><img src="./baidu-icno.png" alt="">百度</a>
+	<a href="https://www.baidu.com"><img src="./baidu-icno.png" alt=""> <em>百度</em></a>
+	<a href="https://www.baidu.com"> <em><img src="./baidu-icno.png" alt="">百度</em></a> -->
+
+	<!-- 选择唯一的类型 -->
+	<!-- <div>
+		<a href="https://www.baidu.com"> <img src="./baidu-icno.png" alt=""><em>百度</em><span>span</span></a>
+	</div>
+	<div>
+		<p>p1</p>
+		<p class="p2">p2</p>
+	</div> -->
+
+	<!-- 选择每第n个元素 -->
+	<!-- <div>
+		<span>第1个span</span><span>第2个span</span><span>第3个span</span><span>第4个span</span>
+	</div> -->
+
+
+	<!-- 判断列表长度 -->
+	<!-- <ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul> -->
+
+
+
+	<!-- UI状态伪类 -->
+	<label for="name">名字:</label><input type="text" id="name">
+	<label for="email">邮箱:</label><input type="text" id="email" disabled>
+
+</body>
+
+</html>
